@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "direction": "in"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "direction": "out",
+      "apiKey": "AzureWebJobsSendGridApiKey",
+      "from": "garobins@microsoft.com",
+      "to": "gary.robinson2524@gmail.com",
+      "subject": "",
+      "text": ""
+    }
+  ]
+}
