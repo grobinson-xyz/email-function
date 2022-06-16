@@ -10,7 +10,7 @@
       "name": "message",
       "direction": "out",
       "apiKey": "AzureWebJobsSendGridApiKey",
-      "from": "garobins@microsoft.com",
+      "from": "garobins@microsoftsupport.com",
       "to": "gary.robinson2524@gmail.com",
       "subject": "",
       "text": ""

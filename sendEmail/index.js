@@ -14,10 +14,11 @@ module.exports = async function (context, req) {
     context.log('JavaScript queue trigger function processed order');
 
     context.bindings.message = {
-        subject: util.format('Thanks for your order (#%d)!'),
+        subject: util.format(req.body.subject + ' ' + '-' + 'Tracking#' + req.body.caseId ),
         content: [{
             type: 'text/plain',
-            value: util.format("%s, your order (%d) is being processed!")
+            value: util.format(req.body.message)
         }]
     };
+    
 }
